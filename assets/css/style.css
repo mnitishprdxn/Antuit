@@ -1,0 +1,610 @@
+@charset 'utf-8';
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+  }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+  }
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+  }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+  }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+  }
+
+strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  }
+
+em {
+  font-style: italic;
+  }
+
+img {
+  border: 0;
+  vertical-align: middle;
+  }
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+  }
+
+sup {
+  top: -.7em;
+  }
+
+sub {
+  bottom: -.25em;
+  }
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+  }
+
+.cf:after {
+  clear: both;
+  }
+/*********************** Styling start **********************/
+body {
+  font-family: sans-serif;
+  }
+
+header {
+  padding-top: 51px;
+  padding-bottom: 91px;
+  background: url(../images/background.png) no-repeat center center;
+  background-size: cover;
+  }
+
+.header-wrapper {
+  width: 98%;
+  max-width: 1016px;
+  margin: 0 auto;
+  }
+
+header h1 {
+  display: inline-block;
+  }
+
+.hamburger {
+  display: inline-block;
+  float: right;
+  }
+
+header h2 {
+  padding-top: 97px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+.your-strategic-div {
+  padding: 80px 0;
+  }
+
+.your-led-wrapper {
+  width: 98%;
+  max-width: 751px;
+  margin: 0 auto;
+  }
+
+.your-strategic-div h2 {
+  color: #38373c;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  }
+
+.your-strategic-div p {
+  padding-top: 29px;
+  color: #38373c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  }
+
+.your-led-wrapper button {
+  padding: 0 2%;
+  margin-top: 40px;
+  margin-left: 34%;
+  border: 2px solid #3956f0;
+  border-radius: 5px;
+  background: transparent;
+  color: #3956f0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  }
+
+  .led-by-div,
+  .teams-div {
+    padding: 80px 0;
+    background-color: rgba(128, 128, 128, 0.12)
+  }
+
+  .led-by-div h2 {
+  color: #38373c;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  }
+
+.led-by-div p {
+  padding-top: 29px;
+  color: #38373c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  }
+
+  .teams-div {
+
+  }
+
+  .teams-div nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+.teams-div nav ul li{
+  display: inline-block;
+      padding: 1%;
+    text-transform: uppercase;
+    color:  #3956f0;
+font-size: 1.2vw;
+font-weight: 700;
+letter-spacing: 0.7px;
+}
+
+.teams-solutions-wrapper {
+      max-width: 1000px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.teams-div nav {
+  padding-bottom: 46px;
+}
+
+.teams-div nav ul li a { 
+  text-decoration: none; 
+  color: grey;
+}
+
+.teams-div nav ul li:hover a {
+  color: #3956f0;
+}
+
+.teams-div nav ul li:first-letter {
+ text-transform: uppercase;
+}
+
+.members-profile {
+  display: flex;
+    justify-content: space-between;
+}
+
+.members-profile img {
+  max-width: 100%;
+}
+
+.members-profile > div {
+  width: 24%;
+}
+
+.profile {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.profile h2 {
+  color:  #38373c;
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+text-align: center;
+padding-top: 21px;
+}
+
+.profile p {
+color:  #a6a8ab;
+font-size: 14px;
+font-style: italic;
+line-height: 25px;
+text-align: center;
+padding-bottom: 21px;
+}
+
+.profile:hover span{
+  display: inline-block;
+}
+
+.overlay-span span {
+    display: none;
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    color: white;
+    font-size: 2vw;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    border-radius: 20px;
+    background: #e45107;
+}
+
+.teams-solutions-wrapper ul {
+  border-top: 1px solid grey;
+}
+
+
+.solution-div-wrapper {
+max-width: 1000px;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solutions-div {
+  padding: 78px 0; 
+}
+
+.info-div {
+  width: 30%;
+  text-align: center;
+}
+
+.info-div img {
+  padding-bottom: 33px;
+}
+
+.info-div h2 {
+  color:  #38373c;
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+}
+
+.info-div p {
+  width: 96%;
+    padding-top: 10px;
+  color:  #a6a8ab;
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+}
+
+.our-capabilities-div {
+  background: url(../images/mountains.png) no-repeat;
+  padding-top: 69px;
+  padding-bottom: 366px;
+}
+
+.our-capabilities-wrapper {
+  max-width: 1000px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.our-capabilities-wrapper> h2 {
+  color: #38373c;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  }
+
+.our-capabilities-wrapper> p {
+  padding-top: 29px;
+  color: #38373c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+      width: 77%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .tabs-panels ul { list-style: none; }
+
+  .tabs-panels {
+    padding-top: 57px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tabs img {
+    border: 1px solid white;
+  }
+
+  .tabs a {
+    display: block;
+  }
+
+  .tabs img {
+    padding: 16%;
+    border-radius: 10px;
+  }
+
+  .tab-content {
+    padding-top: 30px;
+  }
+
+  .tab-content p {
+    color: white;
+    font-size: 2vw;
+    font-style: ita
+  }
+
+.tab-content .panel { display: none; }
+
+.panel span {
+  color: orange;
+}
+
+.our-capabilities-div {
+  padding-bottom: 422px;
+}
+
+.database-your-inbox-div h2 {
+    font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  } 
+
+  .database-your-inbox-div {
+    background: #444348;
+    padding: 40px 0;
+  }
+
+  form {
+    text-align: center;
+    padding-top: 25px;
+  }
+
+form button {
+  padding: 0 2%;
+ border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+form input {
+      margin-right: 1%;
+      padding: .7%;
+    width: 23%;
+    border: none;
+
+}
+
+.about-us-div {
+  padding: 40px 0; 
+  background-color:  #38373c; 
+}
+
+.about-us-wrapper {
+  max-width: 1000px;
+  width: 98%;
+  margin: 0 auto; 
+      display: flex;
+    justify-content: space-between;
+}
+
+.about-us-div p {
+color:  #ffffff;
+font-size: 14px;
+font-weight: 700;
+line-height: 25px;
+text-align: left;
+}
+
+.about-us-div li {
+color:  #a6a8ab;
+font-size: 12px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+}
+
+.about-us-div ul { list-style: none; }
+
+.follow-us li {
+  display: inline-block;
+}
+
+footer {
+  background-color:  #2c2b30;
+} 
+
+footer ul { 
+  display: flex;
+  list-style: none; 
+}
+
+footer li { width: 8%; }
+
+footer ul li+li:before {
+  content: '|';
+  color: white;
+  padding: 0 10%; 
+}
+
+footer li a { text-decoration: none; }
+
+footer li:nth-child(1) a{
+  color:  #ffffff;
+font-size: 11px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+
+}
+
+footer li:nth-child(2) a,
+footer li:nth-child(3) a,
+footer li:nth-child(4) a{
+  color:  #d8dade;
+font-size: 11px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+
+}
